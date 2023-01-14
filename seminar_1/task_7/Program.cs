@@ -6,7 +6,7 @@ System.Console.WriteLine();
 int hundered_number = 0;
 
 do {
-    System.Console.Write("Введите целое трехзначное число:\t");
+    System.Console.Write("Введите целое  трехзначное число:\t");
 }
 while (!Int32.TryParse(
     System.Console.ReadLine(), out hundered_number)

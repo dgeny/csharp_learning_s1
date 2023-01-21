@@ -5,12 +5,14 @@ System.Console.WriteLine();
 
 int counter = 0;
 
-do {
+do
+{
     System.Console.Write("Введите целое число:\t");
 }
 while (!Int32.TryParse(System.Console.ReadLine(), out counter));
 
-for (int i=-counter; i < counter + 1; i++){
+for (int i = -counter; i < counter + 1; i++)
+{
     System.Console.Write($"{i} ");
 }
 System.Console.WriteLine();

@@ -8,8 +8,10 @@ System.Console.WriteLine();
 System.Console.Write("Введите число: ");
 int number = int.Parse(System.Console.ReadLine());
 
-for (int i=1; i < number; i++){
-    if (i%2 == 0){
+for (int i = 1; i < number; i++)
+{
+    if (i % 2 == 0)
+    {
         Console.Write($" {i}");
     }
 }

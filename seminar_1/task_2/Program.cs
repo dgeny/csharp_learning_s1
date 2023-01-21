@@ -13,13 +13,16 @@ System.Console.Write("Введите второе число: ");
 int two_number = int.Parse(System.Console.ReadLine());
 
 // Решение 1.
-if (first_number > two_number){
+if (first_number > two_number)
+{
     System.Console.WriteLine($"Первое введенное число ({first_number}) больше второго ({two_number})\nmax = {first_number}");
 }
-else if(first_number < two_number){
+else if (first_number < two_number)
+{
     System.Console.WriteLine($"Второе введенное число ({two_number}) больше первого ({first_number})\nmax = {two_number}");
 }
-else {
+else
+{
     System.Console.WriteLine("Введенные числа одинаковы");
 }
 

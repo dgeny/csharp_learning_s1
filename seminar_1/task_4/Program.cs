@@ -16,10 +16,12 @@ System.Console.Write("Введите третье число: ");
 int third_number = int.Parse(System.Console.ReadLine());
 int max_number = first_number;
 
-if(two_number>max_number){
+if (two_number > max_number)
+{
     max_number = two_number;
 }
-if(third_number > max_number){
+if (third_number > max_number)
+{
     max_number = third_number;
 }
 System.Console.WriteLine(

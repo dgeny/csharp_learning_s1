@@ -10,10 +10,12 @@ System.Console.Write("Введите число: ");
 int number = int.Parse(System.Console.ReadLine());
 
 System.Console.Write("Это число ");
-if(number%2 == 0){
+if (number % 2 == 0)
+{
     System.Console.Write(" четное");
 }
-else {
+else
+{
     System.Console.Write(" нечетное");
 }
 

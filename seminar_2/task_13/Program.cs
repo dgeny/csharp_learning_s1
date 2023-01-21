@@ -9,7 +9,7 @@
 decimal number = 0;
 do
 {
-    System.Console.Write("Введите произвольное число, начиная с 100:");
+    System.Console.Write("Введите произвольное число:");
 }
 while (!
         (decimal.TryParse(Console.ReadLine(), out number))

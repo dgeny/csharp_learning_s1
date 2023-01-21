@@ -16,7 +16,7 @@ while (!
 );
 
 number = Math.Abs(number);
-UInt64 resulted = Convert.ToUInt64(number);
+UInt64 resulted = Convert.ToUInt64(number); // <- Integer overflow 
 if(resulted < 100)
 {
         System.Console.WriteLine("Третьей цифры нет.");

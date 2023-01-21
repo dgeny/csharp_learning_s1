@@ -6,18 +6,26 @@
 32679 -> 6
 */
 
-Int128 number = 0;
+decimal number = 0;
 do
 {
     System.Console.Write("Введите произвольное число, начиная с 100:");
 }
 while (!
-        (Int128.TryParse(Console.ReadLine(), out number) &&
-        (number > 99))
+        (decimal.TryParse(Console.ReadLine(), out number))
 );
 
-while(number  > 1000)
+number = Math.Abs(number);
+UInt64 resulted = Convert.ToUInt64(number);
+if(resulted < 100)
 {
-        number = number / 10;
+        System.Console.WriteLine("Третьей цифры нет.");
+        return;
 }
-System.Console.WriteLine($"Третья  цифра числа - {number % 10}");
+
+
+while(resulted  > 1000)
+{
+        resulted = resulted / 10;
+}
+System.Console.WriteLine($"Третья  цифра числа - {resulted % 10}");

@@ -35,7 +35,7 @@ int InputNumber(string message)
     return number;
 }
 
-int SumEven(int[] numbers)
+int CountEven(int[] numbers)
 {
     int result = 0;
     foreach (var item in numbers)
@@ -54,4 +54,4 @@ FillArray(numbers, leftRange, rightRange);
 System.Console.WriteLine("Сгенерированный массив:");
 PrintArray(numbers);
 System.Console.WriteLine();
-System.Console.WriteLine($"Количество четных элементов массива: {SumEven(numbers)}");
+System.Console.WriteLine($"Количество четных элементов массива: { CountEven(numbers)}");

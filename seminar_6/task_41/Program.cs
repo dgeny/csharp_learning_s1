@@ -6,21 +6,6 @@
 */
 
 
-int InputNumber(string message)
-{
-    int number = -1;
-    while (true)
-    {
-        System.Console.Write(message + ": ");
-        if (!(int.TryParse(Console.ReadLine(), out number)))
-        {
-            System.Console.WriteLine("Введено некорректное число, попробуйте еще раз.");
-        }
-        else break;
-    }
-    return number;
-}
-
 int CalcPositive(string[] parsingStrings, out int numCount)
 {
     int count = 0;
@@ -38,17 +23,45 @@ int CalcPositive(string[] parsingStrings, out int numCount)
     return count;
 }
 
-/*
-int arraySize = InputNumber("Введите количество чисел");
-int[] numbers = new int[arraySize];
-for (int i = 0; i < arraySize; i++)
-{
-   numbers[i] = InputNumber("Введите следующее число");
-}
-*/
-
 System.Console.Write("Введите произвольное количество чисел (через пробел):");
 string[] userInput = Console.ReadLine().Split(" ");
 int numbersCount = 0;
 int posCount = CalcPositive(userInput, out numbersCount);
 System.Console.WriteLine($"Вы ввели {numbersCount} чисел, положительных из них - {posCount} ");
+
+/* 
+int InputNumber(string message)
+{
+    int number = -1;
+    while (true)
+    {
+        System.Console.Write(message + ": ");
+        if (!(int.TryParse(Console.ReadLine(), out number)))
+        {
+            System.Console.WriteLine("Введено некорректное число, попробуйте еще раз.");
+        }
+        else break;
+    }
+    return number;
+}
+
+int CalcPositive(int[] numbers)
+{
+    int count = 0;
+    foreach (var item in numbers)
+        if (item > 0)
+            count++;
+    return count;
+}
+
+
+int M = InputNumber("Введите количество чисел");
+int[] numbers = new int[M];
+for (int i = 0; i < M; i++)
+{
+   numbers[i] = InputNumber("Введите следующее число");
+}
+
+System.Console.WriteLine($"Вы ввели {M} чисел, положительных из них - {CalcPositive(numbers)} ");
+
+ */

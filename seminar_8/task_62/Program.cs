@@ -56,7 +56,7 @@ int[,] MakeSpiralMatrix(int row, int col)
     return mtrx;
 }
 
-int x = 15, y = 10;
+int x = 4, y = 4;
 PrintArray(MakeSpiralMatrix(x,y));
 /*x = 15, y = 10
 
